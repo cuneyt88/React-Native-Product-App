@@ -64,6 +64,7 @@ const ExpenseForm = ({submitButtonLabel,onCancel,onSubmit,defaultValues}) => {
         }}/>
         <Input label="Date" invalid={!inputs.date.isValid} textInputConfig={{
             placeholder:'YYYY-MM-DD',
+            keyboardType:'decimal-pad',
             maxLength:10,
             onChangeText:inputChangedHandler.bind(this,'date'),
             value:inputs.date.value
